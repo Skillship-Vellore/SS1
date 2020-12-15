@@ -9,7 +9,7 @@
 	font-family: arial;
 }
 
-.container {
+.container-project {
 	max-width: 1000px;
 	position: relative;
 	display: flex;
@@ -17,18 +17,18 @@
 	flex-wrap: wrap;
 }
 
-.container .card {
+.container-project .card-project {
 	position: relative;
 	padding: 15px;
 }
 
-.container .card .face {
+.container-project .card-project .face {
 	width: 300px;
 	height: 200px;
 	transition: 0.4s;
 }
 
-.container .card .face.face1 {
+.container-project .card-project .face.face1 {
 	position: relative;
 	background: #f6c733;
 	display: flex;
@@ -39,7 +39,7 @@
 	transform: translateY(100px);
 }
 
-.container .card:hover .face.face1 {
+.container-project .card-project:hover .face.face1 {
 	transform: translateY(0);
 	box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f59b00,
 		inset -20px 0 80px #f6c733, inset 20px 0 300px#f59b00,
@@ -47,33 +47,33 @@
 		10px 0 80px #f6c733;
 }
 
-.container .card .face.face1 .content {
+.container-project .card-project .face.face1 .content {
 	opacity: 0.2;
 	transition: 0.5s;
 	text-align: center;
 }
 
-.container .card:hover .face.face1 .content {
+.container-project .card-project:hover .face.face1 .content {
 	opacity: 1;
 }
 
-.container .card .face.face1 .content i {
+.container-project .card-project .face.face1 .content i {
 	font-size: 3em;
 	color: white;
 	display: inline-block;
 }
 
-.container .card .face.face1 .content h3 {
+.container-project .card-project .face.face1 .content h3 {
 	font-size: 1em;
 	color: white;
 	text-align: center;
 }
 
-.container .card .face.face1 .content a {
+.container-project .card-project .face.face1 .content a {
 	transition: 0.5s;
 }
 
-.container .card .face.face2 {
+.container-project .card-project .face.face2 {
 	position: relative;
 	background: whitesmoke;
 	color: #333;
@@ -87,11 +87,11 @@
 	transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2 {
+.container-project .card-project:hover .face.face2 {
 	transform: translateY(0);
 }
 
-.container .card .face.face2 .content p,
+.container-project .card-project .face.face2 .content p,
 a {
 	font-size: 9pt;
 	margin: 0;
@@ -99,7 +99,7 @@ a {
 	color: #333;
 }
 
-.container .card .face.face2 .content a {
+.container-project .card-project .face.face2 .content a {
 	text-decoration: none;
 	color: black;
 	box-sizing: border-box;
@@ -111,7 +111,7 @@ a {
 	float: right;
 }
 
-.container .card .face.face2 .content a:hover {
+.container-project .card-project .face.face2 .content a:hover {
 	background: #f59b00;
 	color: whitesmoke;
 	border: 0px;
