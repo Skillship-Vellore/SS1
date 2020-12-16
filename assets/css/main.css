@@ -2916,7 +2916,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: Menlo, monaco, Consolas, Lucida Console, monospace;
+	font-family: Menlo, monaco, Consolas, Lucida Console, monospace !important;
 	font-size: 1em;
 }
 button {
@@ -2985,7 +2985,7 @@ th {
 .font-titles {
 	font-family: 'Space Grotesk Bold', -apple-system, BlinkMacSystemFont, Roboto,
 		'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol';
+		'Segoe UI Emoji', 'Segoe UI Symbol' !important;
 }
 h1,
 h2,
@@ -2996,8 +2996,8 @@ h6 {
 	clear: both;
 	font-family: 'Space Grotesk Bold', -apple-system, BlinkMacSystemFont, Roboto,
 		'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-		'Segoe UI Emoji', 'Segoe UI Symbol';
-	font-weight: 700;
+		'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+	font-weight: 700 !important;
 	text-align: inherit;
 	position: relative;
 	color: #17161a;
@@ -3045,9 +3045,9 @@ h6.heading-sm {
 	letter-spacing: -0.01em;
 }
 h1 {
-	font-size: -webkit-calc(46px + 26 * ((100vw - 576px)/ 1024));
-	font-size: calc(46px + 26 * ((100vw - 576px) / 1024));
-	line-height: 1;
+	font-size: -webkit-calc(46px + 26 * ((100vw - 576px)/ 1024)) !important;
+	font-size: calc(46px + 26 * ((100vw - 576px) / 1024)) !important;
+	line-height: 1.1 !important;
 	letter-spacing: -0.03em;
 }
 @media screen and (max-width: 576px) {
@@ -3066,8 +3066,8 @@ h1 {
 	}
 }
 h2 {
-	font-size: -webkit-calc(40px + 14 * ((100vw - 576px)/ 1024));
-	font-size: calc(40px + 14 * ((100vw - 576px) / 1024));
+	font-size: -webkit-calc(40px + 14 * ((100vw - 576px)/ 1024)) !important;
+	font-size: calc(40px + 14 * ((100vw - 576px) / 1024)) !important;
 	line-height: 1.05;
 	letter-spacing: -0.02em;
 }
@@ -3082,8 +3082,8 @@ h2 {
 	}
 }
 h3 {
-	font-size: -webkit-calc(36px + 4 * ((100vw - 576px)/ 1024));
-	font-size: calc(36px + 4 * ((100vw - 576px) / 1024));
+	font-size: -webkit-calc(36px + 4 * ((100vw - 576px)/ 1024)) !important;
+	font-size: calc(36px + 4 * ((100vw - 576px) / 1024)) !important;
 	line-height: 1.1;
 }
 @media screen and (max-width: 576px) {
@@ -3097,8 +3097,8 @@ h3 {
 	}
 }
 h4 {
-	font-size: -webkit-calc(24px + 2 * ((100vw - 576px)/ 1024));
-	font-size: calc(24px + 2 * ((100vw - 576px) / 1024));
+	font-size: -webkit-calc(24px + 2 * ((100vw - 576px)/ 1024)) !important;
+	font-size: calc(24px + 2 * ((100vw - 576px) / 1024)) !important;
 	line-height: 1.35;
 }
 @media screen and (max-width: 576px) {
@@ -3112,8 +3112,8 @@ h4 {
 	}
 }
 h5 {
-	font-size: -webkit-calc(19px + 1 * ((100vw - 576px)/ 1024));
-	font-size: calc(19px + 1 * ((100vw - 576px) / 1024));
+	font-size: -webkit-calc(19px + 1 * ((100vw - 576px)/ 1024)) !important;
+	font-size: calc(19px + 1 * ((100vw - 576px) / 1024)) !important;
 	line-height: 1.3;
 }
 @media screen and (max-width: 576px) {
@@ -34358,7 +34358,7 @@ svg {
 	margin: 0;
 	padding: 0 0 10px;
 	color: #fff;
-	font-size: 26px;
+	font-size: 26px !important;
 	font-weight: 700;
 }
 .post-module .post-content .sub_title {
@@ -34650,7 +34650,7 @@ ul .booking-card .informations-container .title {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 1.2em !important;
 	color: #fff;
 }
 ul .booking-card .informations-container .title::after {
