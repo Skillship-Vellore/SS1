@@ -53,7 +53,38 @@
     <script src="assets/lib/a"></script>
     <script src="assets/js/api.js" async="" defer="defer"></script>
 
-    <style type="text/css">
+	<style type="text/css">
+	  :root {
+  --primary-color: #F8C43B;
+  --secondary-color: #FFE17D;
+  --font-color: #ededed;
+  --bg-color: #111111;
+  --heading-color-1: #000;
+  --heading-color-2: #fff;
+  --base1: #4e4e4e;
+  --grad1: rgba(248,196,53,0.15);
+  --grad2: rgba(0, 0, 0, 0.1);
+  --grad3: rgba(248,196,53, 0.05); 
+  --grad4: rgba(255,255,255, 0.06);
+  --grad5: rgba(255,255,255, 0.1);
+  --grad6: rgba(0,0,0,0.9);
+}
+
+[data-theme="dark"] {
+  --primary-color: #2183C2;
+  --secondary-color: #28A0F4;
+  --font-color: #121212;
+  --bg-color: #eeeeee;
+  --heading-color-1: #fff;
+  --heading-color-2: #000;
+  --base1: #A1A1A1;
+  --grad1: rgba(33,131,194,0.15);
+  --grad2: rgba(255, 255, 255, 0.1);
+  --grad3: rgba(33,131,194,0.05); 
+  --grad4: rgba(0,0,0, 0.06);
+  --grad5: rgba(0,0,0, 0.1);
+  --grad6: rgba(255,255,255,0.9);
+}
       @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600|Nunito+Sans:400,600");
       .devfolio-textfield {
         background-color: #cbf8f0 !important;
@@ -163,7 +194,11 @@
         position: relative !important;
         white-space: nowrap !important;
         float: right !important;
-      }
+	  }
+	.txt-ctrl{
+		float: right;
+		
+	}
     </style>
   </head>
 
@@ -2028,18 +2063,28 @@
         </div>
       </div>
     </section>
-
-    <footer id="footer" class="site-footer clb__dark_section">
+    
+    <footer id="footer" class="site-footer clb__dark_section foot-col-black">
+		
       <div class="page-container" style="padding: 0">
         <div class="widgets vc_row" style="padding: 30px 40px">
-          <div class="col-lg-6 text-lg-left text-center">
-            <div class="credits">
+          <div class="txt-ctrl col-lg-6 text-lg-left text-center " >
+            <div class="credits ">
               &copy; Copyright <strong>Skillship</strong>. All Rights Reserved
             </div>
           </div>
-        </div>
-      </div>
-    </footer>
+		</div>
+		<div class="theme-switch-wrapper" style="padding: 20px;">
+			<label class="theme-switch" for="checkbox">
+				<input type="checkbox" id="checkbox"/>
+				<div class="slider round"></div>
+			</label>
+		  </div>
+	  </div>
+	  
+	</footer>
+	
+	
     <a
       class="clb-scroll-top vc_hidden-xs to-top visible light-typo"
       id="clb-scroll-top"
