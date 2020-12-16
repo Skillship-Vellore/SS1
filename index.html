@@ -132,14 +132,40 @@
         color: #273339 !important;
       }
       .logo-nav{
-        float: left;
-        position: relative;
-        margin-top: 15px;
-        margin-left: 10px;
-        margin-right: 180px;
-        margin-bottom: 15px;
-        background-color: #fff;
-        padding:0px 4px 0px 2px ;
+        
+        
+        padding: 0px;
+        height: 190%;
+        width: 190%;
+      }
+      .txtCol{
+        color: #fff !important;
+        text-align: right !important;
+      }
+      .txtCol span:hover{
+        color: #f69a09;
+      }
+      .White {
+        background-color: #111 !important;
+        padding: 0% !important;
+        transition: all 0.3ms !important;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1)!important;
+      }
+      .White span{
+        color:#fff !important;
+      }
+      .White span:hover{
+          color: #f69a09!important;
+      }
+      .Black{
+        background-color: #000 !important;
+        padding: 0% !important;
+      }
+      .nav-menu{
+	     position: relative ! important;
+	     white-space: nowrap !important;
+       float: right !important;
+       
       }
 
     </style>
@@ -164,6 +190,14 @@
       class="circle-cursor circle-cursor--inner"
       style="visibility: visible; transform: translate(821px, 7px)"
     ></div>
+    <script>
+      window.addEventListener("scroll",()=>{
+        var header=document.querySelector("header");
+      header.classList.toggle("White", window.scrollY > 0);
+       var headerZero=document.querySelector("header");
+       headerZero.classList.toggle("Black",window.scrollY==0);
+      });
+    </script>
     <header
       id="masthead"
       class="site-header header-3 both-types visible header-fixed showed"
@@ -190,44 +224,45 @@
                   rel="home"
                   class="remove_underline"
                 >
-                  <div class="logo" style="display: none">
-                    <img src="assets/img/logo2.png" />
+                  <div class="logo-nav" id="navImg" >
+                    <img src='assets/img/Navbar.webp'>
+                   
+                    
                   </div>
                 </a>
               </div>
             </div>
           </div>
+         
           <div class="right-part">
-            <nav id="site-navigation" class="main-nav with-counters visible">
+            <nav id="site-navigation" class=" nav-menu main-nav with-counters visible   ">
               
-              
-              <div >
-                <a href="index.html"> <img src="templates/1/assets/img/navbar.png" alt="" class="logo-nav" /></a>
-              </div>
-            
-              <div class="mbl-overlay">
+             
+             
+              <div class="mbl-overlay ">
                 <div class="mbl-overlay-bg"></div>
                 <div class="close-bar text-left">
                   <div class="btn-round btn-round-light clb-close" tabindex="0">
                     <i class="ion ion-md-close"></i>
                   </div>
                 </div>
-                <div class="mbl-overlay-container">
+                <div class="mbl-overlay-container nav-menu ">
                   <div
                     id="mega-menu-wrap"
-                    class="main-nav-container"
+                    class="main-nav-container "
                     role="navigation"
                   >
-                    <ul id="primary-menu" class="menu">
+                    <ul id="primary-menu" class="menu " >
                       <li
+                      
                         id="nav-menu-item-25539-5e1dd60a5ab26"
                         class="mega-menu-item nav-item menu-item-depth-0"
                       >
                         <a
                           href="#introduction"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
-                          ><span class="">Home</span></a
+                          ><span >Home</span></a
                         >
                       </li>
                       <li
@@ -236,9 +271,9 @@
                       >
                         <a
                           href="#what"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
-                          ><span class="">What we do ?</span></a
+                          ><span >What we do ?</span></a
                         >
                       </li>
                       <li
@@ -247,9 +282,9 @@
                       >
                         <a
                           href="#events"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
-                          ><span class="">Events</span></a
+                          ><span >Events</span></a
                         >
                       </li>
                       <li
@@ -258,9 +293,9 @@
                       >
                         <a
                           href="#projects"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
-                          ><span class="">Projects</span></a
+                          ><span>Projects</span></a
                         >
                       </li>
                       <li
@@ -269,7 +304,7 @@
                       >
                         <a
                           href="#board"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
                           ><span>Our Board</span></a
                         >
@@ -280,7 +315,7 @@
                       >
                         <a
                           href="#contact"
-                          class="menu-link main-menu-link item-title"
+                          class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
                           ><span>Contact Us</span></a
                         >
