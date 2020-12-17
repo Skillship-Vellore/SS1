@@ -14517,7 +14517,7 @@ z-index: 20;
 }
 
 .slider:before {
-background-color:yellow!important;
+background-color:#F69A09!important;
 bottom: 3.6px!important;
 content: "";
 height: 23px!important;
@@ -34796,11 +34796,11 @@ ul .booking-card:hover .informations-container .more-information {
 }
 .credits {
   display: table;
-  background: #000;
+  background: #F69A09 !important;
   color:#fff! important;
   line-height: 25px;
   margin: 10px auto;
-  padding: 20px;
+  padding: 0px! important;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -34810,7 +34810,7 @@ ul .booking-card:hover .informations-container .more-information {
   color: #e3ebf1;
 }
 .foot-col-black{
-  background-color: #000 !important;
+  background-color: #F69A09 !important;
 }
 
 /* Prizes  */
