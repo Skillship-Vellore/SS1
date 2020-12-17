@@ -12882,16 +12882,21 @@ textarea {
   display: none;
 }
 .clb-scroll-top.light-typo,
-.clb-scroll-top.light-typo .font-titles,
+.clb-scroll-top.light-typo .font-titles{
+  color: #fff;
+}
+
 .clb-social.light-typo,
 .clb-social.light-typo .font-titles {
   color: #fff;
 }
 .clb-scroll-top.dark-typo,
-.clb-scroll-top.dark-typo .font-titles,
+.clb-scroll-top.dark-typo .font-titles{
+  color: #fff;
+}
 .clb-social.dark-typo,
 .clb-social.dark-typo .font-titles {
-  color: #17161a;
+  color: #fff;
 }
 .clb-scroll-top {
   opacity: 0;
@@ -34711,21 +34716,6 @@ ul .booking-card:hover .informations-container .more-information {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  ul .booking-card::before {
-    background: rgba(10, 72, 112, 0.6);
-  }
-  ul .booking-card .book-container .content {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  ul .booking-card .informations-container {
-    transform: translateY(0px);
-  }
-  ul .booking-card .informations-container .more-information {
-    opacity: 1;
-  }
-}
 .credits {
   display: table;
   background: #885506;
@@ -34944,3 +34934,16 @@ img {
   -o-user-drag: none;
   user-drag: none;
 }
+ .blog-content{
+   background-color: #111;
+   color: white;
+ }
+
+ .swiper-pagination-bullet{
+   color: white;
+   background-color: white;
+ }
+
+ .entry-title a{
+   font-size: 20px;
+ }
