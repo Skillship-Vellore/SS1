@@ -158,6 +158,91 @@
 			#devfolio-applynow-modal-container a.muted {
 				color: #273339 !important;
 			}
+			.container2 .column .post-module:before {
+        content: "";
+        position: absolute;
+        right: -0.5px;
+        left: 0px;
+        top: -0.5px;
+        bottom: 0px;
+        z-index: -1;
+      }
+      .container2 .column .post-module:after {
+        content: "";
+        position: absolute;
+        right: -0.5px;
+        left: 0px;
+        top: -0.5px;
+        bottom: 0px;
+        z-index: -1;
+        background: #fff;
+        filter: blur(8px);
+        stroke: inherit;
+      }
+      .container2 .column .post-module:before,
+      .container2 .column .post-module:after {
+        background: linear-gradient(250deg, #f69a09, #f8c43b);
+      }
+      .demo-heading .booking li:before {
+        content: "";
+        position: absolute;
+        right: -2px;
+        left: -2px;
+        top: -2px;
+        bottom: -2px;
+        z-index: -1;
+      }
+      .demo-heading .booking:after {
+        content: "";
+        position: absolute;
+        right: -2px;
+        left: -2px;
+        top: -2px;
+        bottom: 0px;
+        z-index: -2;
+        background: #fff;
+        filter: blur(40px);
+      }
+      .demo-heading .booking:before,
+      .demo-heading .booking:after {
+        background: linear-gradient(250deg, #f69a09, #f8c43b);
+			}
+			.logo-nav {
+        padding: 0px;
+        height: 190%;
+        width: 190%;
+      }
+      .txtCol {
+        color: #fff !important;
+        text-align: right !important;
+      }
+      .txtCol span:hover {
+        color: #f69a09;
+      }
+      .White {
+        background-color: #111 !important;
+        padding: 0% !important;
+        transition: all 0.3ms !important;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
+      }
+      .White span {
+        color: #fff !important;
+      }
+      .White span:hover {
+        color: #f69a09 !important;
+      }
+      .Black {
+        background-color: #000 !important;
+        padding: 0% !important;
+      }
+      .nav-menu {
+        position: relative !important;
+        white-space: nowrap !important;
+        float: right !important;
+      }
+      .txt-ctrl{
+        float: right !important;
+	  }
 		</style>
 	</head>
 
@@ -180,6 +265,14 @@
 			class="circle-cursor circle-cursor--inner"
 			style="visibility: visible; transform: translate(821px, 7px)"
 		></div>
+		<script>
+			window.addEventListener("scroll", () => {
+				var header = document.querySelector("header");
+				header.classList.toggle("White", window.scrollY > 0);
+				var headerZero = document.querySelector("header");
+				headerZero.classList.toggle("Black", window.scrollY == 0);
+			});
+		</script>
 		<header
 			id="masthead"
 			class="site-header header-3 both-types visible header-fixed showed"
@@ -206,15 +299,15 @@
 									rel="home"
 									class="remove_underline"
 								>
-									<div class="logo" style="display: none">
-										<img src="assets/img/logo2.png" />
+									<div class="logo-nav" id="navImg">
+									<img src="assets/img/Navbar.webp" />
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="right-part">
-						<nav id="site-navigation" class="main-nav with-counters visible">
+						<nav id="site-navigation" class="nav-menu main-nav with-counters visible">
 							<div class="mbl-overlay">
 								<div class="mbl-overlay-bg"></div>
 								<div class="close-bar text-left">
@@ -222,7 +315,7 @@
 										<i class="ion ion-md-close"></i>
 									</div>
 								</div>
-								<div class="mbl-overlay-container">
+								<div class="mbl-overlay-container nav-menu">
 									<div
 										id="mega-menu-wrap"
 										class="main-nav-container"
@@ -235,7 +328,7 @@
 											>
 												<a
 													href="#introduction"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span class="">Home</span></a
 												>
@@ -246,7 +339,7 @@
 											>
 												<a
 													href="#what"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span>What we do ?</span></a
 												>
@@ -257,7 +350,7 @@
 											>
 												<a
 													href="#events"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span class="">Events</span></a
 												>
@@ -268,7 +361,7 @@
 											>
 												<a
 													href="#projects"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span class="">Projects</span></a
 												>
@@ -279,7 +372,7 @@
 											>
 												<a
 													href="#board"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span>Our Board</span></a
 												>
@@ -290,7 +383,7 @@
 											>
 												<a
 													href="#contact"
-													class="menu-link main-menu-link item-title"
+													class="menu-link main-menu-link item-title  txtCol"
 													id="accessible-megamenu-1579013644524-12"
 													><span>Contact Us</span></a
 												>
@@ -1589,13 +1682,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1619,13 +1712,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1649,13 +1742,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1679,13 +1772,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1709,13 +1802,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1739,13 +1832,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1769,13 +1862,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1799,13 +1892,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -1829,13 +1922,13 @@
 										<a
 											href="https://www.linkedin.com/in/abphilip3/"
 											target="_blank"
-											style="color: #000"
+											style="color: #fff"
 											>Member</a
 										>
 									</h3>
 									<ul class="post-meta" style="font-size: 16px">
 										<li>
-											<a style="color: #000">Position</a>
+											<a style="color: #fff">Position</a>
 										</li>
 									</ul>
 								</div>
@@ -2229,15 +2322,21 @@
 			</div>
 		</section>
 		<!-- End Contact Section -->
-		<footer id="footer" class="site-footer clb__dark_section">
+		<footer id="footer" class="site-footer clb__dark_section foot-col-black">
 			<div class="page-container" style="padding: 0">
-				<div class="widgets vc_row" style="padding: 30px 40px">
-					<div class="col-lg-6 text-lg-left text-center">
+				<div class="widgets vc_row " style="padding: 30px 40px">
+					<div class="txt-ctrl col-lg-6 text-lg-left  text-center">
 						<div class="credits">
 							&copy; Copyright <strong>Skillship</strong>. All Rights Reserved
 						</div>
 					</div>
 				</div>
+				<div class="theme-switch-wrapper" style="padding: 30px;">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox"/>
+            <div class="slider round"></div>
+          </label>
+          </div>
 			</div>
 		</footer>
 		<a
