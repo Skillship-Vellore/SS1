@@ -34809,7 +34809,9 @@ ul .booking-card:hover .informations-container .more-information {
 .credits a {
   color: #e3ebf1;
 }
-
+.foot-col-black{
+  background-color: #000 !important;
+}
 
 /* Prizes  */
 
