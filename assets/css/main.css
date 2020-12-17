@@ -34717,15 +34717,7 @@ ul .booking-card:hover .informations-container .more-information {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  ul .booking-card::before {
-    background: rgba(10, 72, 112, 0.6);
-  }
-  ul .booking-card .book-container .content {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+
 .credits {
   display: table;
   background: #885506;
