@@ -34796,8 +34796,8 @@ ul .booking-card:hover .informations-container .more-information {
 }
 .credits {
   display: table;
-  background: #885506;
-  color: white;
+  background: #000;
+  color:#fff! important;
   line-height: 25px;
   margin: 10px auto;
   padding: 20px;
