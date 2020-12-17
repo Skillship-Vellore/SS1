@@ -33821,12 +33821,17 @@ svg {
   margin-bottom: 10px;
 }
 
+.entry-title a{
+  font-size: 20px;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 .blog-content {
   padding-bottom: 20px;
+  background-color: #111;
 }
 .swiper-slide {
   text-align: center;
@@ -33854,6 +33859,7 @@ svg {
 .swiper-pagination .swiper-pagination-bullet {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  background-color: #fff;
 }
 .swiper-pagination .swiper-pagination-bullet:hover {
   opacity: 0.7;
@@ -34718,12 +34724,6 @@ ul .booking-card:hover .informations-container .more-information {
   ul .booking-card .book-container .content {
     opacity: 1;
     transform: translateY(0px);
-  }
-  ul .booking-card .informations-container {
-    transform: translateY(0px);
-  }
-  ul .booking-card .informations-container .more-information {
-    opacity: 1;
   }
 }
 .credits {
