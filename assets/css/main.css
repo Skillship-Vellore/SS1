@@ -12882,16 +12882,20 @@ textarea {
   display: none;
 }
 .clb-scroll-top.light-typo,
-.clb-scroll-top.light-typo .font-titles,
+.clb-scroll-top.light-typo .font-titles{
+  color: #fff;
+}
 .clb-social.light-typo,
-.clb-social.light-typo .font-titles {
+.clb-social.light-typo .font-titles{
   color: #fff;
 }
 .clb-scroll-top.dark-typo,
-.clb-scroll-top.dark-typo .font-titles,
+.clb-scroll-top.dark-typo .font-titles{
+  color: #fff;
+}
 .clb-social.dark-typo,
-.clb-social.dark-typo .font-titles {
-  color: #17161a;
+.clb-social.dark-typo .font-titles{
+  color: #fff;
 }
 .clb-scroll-top {
   opacity: 0;
@@ -12935,7 +12939,7 @@ textarea {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: currentColor;
+  background-color: #fff;
   opacity: 0.3;
 }
 .clb-scroll-top-bar .scroll-track {
@@ -12943,7 +12947,8 @@ textarea {
   top: 0;
   right: 0;
   height: 100%;
-  background-color: currentColor;
+  background-color: #fff;
+  color: #fff;
 }
 .clb-scroll-top.clb-slider-scroll-top {
   visibility: visible;
@@ -33832,11 +33837,12 @@ svg {
 .blog-content {
   padding-bottom: 20px;
   background-color: #111;
+  border-radius: 0px 0px 22px 22px;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: black;
   border-radius: 10px;
   /*Centerslidetextvertically*/
   display: -webkit-box;
