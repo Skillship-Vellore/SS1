@@ -316,7 +316,7 @@
                         class="mega-menu-item nav-item menu-item-depth-0"
                       >
                         <a
-                          href="#what"
+                          href="#wht"
                           class="menu-link main-menu-link item-title txtCol"
                           id="accessible-megamenu-1579013644524-12"
                           ><span>What we do ?</span></a
@@ -483,10 +483,10 @@
         </div>
       </div>
     </section>
-
+    <section id="wht" style="padding: 30px 0px 0px 0px; background-color: #000"></section>
     <section
       id="what"
-      style="padding: 30px 0px 0px 0px; background-color: #000"
+      style="padding: 50px 0px 0px 0px; background-color: #000"
     >
       <div class="demo-heading text-center" style="padding-top: 0">
         <div class="demo-heading text-center" style="padding-top: 15px">
@@ -2174,7 +2174,7 @@
       <div class="clb-scroll-top-bar">
         <div class="scroll-track" style="width: 100%"></div>
       </div>
-      <div class="clb-scroll-top-holder font-titles"><span style="color: #fff;">Scroll to top</span></div>
+      <div class="clb-scroll-top-holder font-titles"><span style="color: #fff;" onclick="topFun()" id="top" class="tp">Scroll to top</span></div>
     </a>
     <script>
       var swiper = new Swiper(".swiper-container", {
@@ -2269,6 +2269,11 @@
         endtimeSeconds: seconds,
         timeZone: "",
       });
+      
+      function topFun() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <script>
       $(window).load(function () {
@@ -2282,6 +2287,7 @@
           );
         });
       });
+
     </script>
     <script src="assets/js/timer-main.js"></script>
   </body>
