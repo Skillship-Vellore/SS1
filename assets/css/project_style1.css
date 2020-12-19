@@ -1,0 +1,114 @@
+/*.container2 .column .post-module:before{
+  content: '';
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.container2 .column .post-module:hover{
+  content: '';
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
+  background: #fff;
+  filter: blur(8px);
+}
+/*
+      .container2 .column .post-module:before,*/
+      /*.container2 .column .post-module:hover {*/
+        /*background: linear-gradient(#f69a09,#f8c43b);*/
+      }
+
+/*
+ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #171515;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+*/
+.container2 .column .post-module:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*border-radius:50%;*/
+  background: linear-gradient(250deg,#f69a09,#f8c43b);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.container2 .column .post-module:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #f8c43b;
+  filter: blur(3px);
+}
+
+.container2 .column .post-module:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
+
+.cardmain:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*border-radius:50%;*/
+  background: linear-gradient(250deg,#f69a09,#f8c43b);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+.cardmain:hover:before {
+  transform: scale(0.5);
+  box-shadow: 0 0 15px #f8c43b;
+  filter: blur(3px);
+}
+
+.cardmain:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
+
+.booking-card:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /*border-radius:50%;*/
+  background: linear-gradient(250deg,#f69a09,#f8c43b);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+.booking-card:hover:before {
+  transform: scale(0.5);
+  box-shadow: 0 0 15px #f8c43b;
+  filter: blur(3px);
+}
+
+.booking-card:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
