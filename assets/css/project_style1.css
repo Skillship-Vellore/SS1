@@ -112,3 +112,9 @@ ul li a {
   color: #ffa502;
   box-shadow: 0 0 15px #f69a09;
 }
+
+
+#btn-hover:hover {
+  box-shadow: 0 0 15px #f69a09;
+  border: 2px solid #f69a09;
+}
