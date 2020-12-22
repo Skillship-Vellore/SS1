@@ -1,0 +1,27 @@
+.cardmain:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
+
+#btn-hover:hover {
+  box-shadow: 0 0 15px #f69a09;
+  border: 2px solid #f69a09;
+}
+
+.booking-card:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
+
+
+
+.container2 .column .post-module:hover:before {
+	transform: scale(0.1);
+  	color: #000;
+  	box-shadow: 0 0 0 #000;
+}
+
+.container2 .column .post-module:hover {
+  color: #ffa502;
+  box-shadow: 0 0 15px #f69a09;
+}
