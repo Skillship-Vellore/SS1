@@ -34780,7 +34780,7 @@ ul .booking-card .informations-container .disclaimer {
   text-align: left;
 }
 ul .booking-card:hover::before {
-  background: rgba(10, 72, 112, 0.6);
+  background: rgba(17, 17, 17, 0.6);
 }
 ul .booking-card:hover .book-container .content {
   opacity: 1;
