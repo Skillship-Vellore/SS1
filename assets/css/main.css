@@ -2827,6 +2827,7 @@ html {
 }
 body {
   margin: 0;
+  
 }
 article,
 aside,
@@ -35019,10 +35020,16 @@ img {
 
 
 
+
+
+
+.contact{
+  background-color: black;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
-  
+  width: 280px;
   padding: 20px 0 30px 0;
   height: 80%;
 }
@@ -35033,6 +35040,7 @@ img {
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f5a0a0;
+
 }
 
 .contact .info-box h3 {
@@ -35040,6 +35048,7 @@ img {
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
+  
 }
 
 .contact .info-box p {
@@ -35047,6 +35056,7 @@ img {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+ 
 }
 
 .contact .php-email-form {
@@ -35117,6 +35127,7 @@ img {
 
 .contact .php-email-form input {
   padding: 20px 15px;
+  background-color: white;
 }
 
 .contact .php-email-form textarea {
@@ -35147,6 +35158,14 @@ img {
 }
 .linkedin{
   color: #f69a09;
+}
+
+
+.circle-icon {
+  background: #ffffba;
+  padding:17%;
+  
+  border-radius: 60%;
 }
 
 @-webkit-keyframes animate-loading {
