@@ -35015,3 +35015,8 @@ img {
   -o-user-drag: none;
   user-drag: none;
 }
+
+.blog-post:hover {
+  transform: translateY(-10px);
+  /* transition: all 0.3s ease 0s; */
+ }
