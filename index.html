@@ -214,7 +214,7 @@
       background-color: #111 !important;
       padding: 0% !important;
       transition: all 0.3ms !important;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0px 2px rgba(246,154,9,0.3)!important ;
     }
 
     .White span {
@@ -239,6 +239,7 @@
     .txt-ctrl {
       float: right !important;
     }
+    
   </style>
 
 </head>
@@ -257,18 +258,20 @@
       header.classList.toggle("White", window.scrollY > 0);
       var headerZero = document.querySelector("header");
       headerZero.classList.toggle("Black", window.scrollY == 0);
+  
     });
   </script>
-  <header id="masthead" class="site-header header-3 both-types visible header-fixed showed" data-header-fixed="true"
+  <header id="masthead" class="site-header header-3 both-types visible header-fixed showed " data-header-fixed="true"
     data-fixed-initial-offset="150">
-    <div class="header-wrap">
+    <div class="header-wrap  ">
+     
       <div class="header-wrap-inner">
         <div class="left-part" style="width: 6%">
           <div class="clb-hamburger btn-round btn-round-light" tabindex="1">
             <i class="ion"><a href="#" class="clb-hamburger-holder" aria-controls="site-navigation"
                 aria-expanded="false"><span class="_shape"></span><span class="_shape"></span></a></i>
           </div>
-          <div class="site-branding">
+          <div class="site-branding ">
             <div class="site-title">
               <a href="https://skillshipvellore.netlify.app" rel="home" class="remove_underline">
                 <div class="logo-nav" id="navImg">
@@ -279,7 +282,7 @@
           </div>
         </div>
         <div class="right-part">
-          <nav id="site-navigation" class="nav-menu main-nav with-counters visible">
+          <nav id="site-navigation" class="nav-menu main-nav with-counters visible ">
             <div class="mbl-overlay">
               <div class="mbl-overlay-bg"></div>
               <div class="close-bar text-left">
@@ -323,6 +326,7 @@
         </div>
       </div>
     </div>
+    
   </header>
 
   <section class="main-section clb-section visible">
@@ -1390,9 +1394,10 @@
   </section>
 
 
-
-  <footer id="footer" class="site-footer clb__dark_section foot-col-black ">
-    <div class="page-container" style="padding: 20">
+  
+  <footer id="footer" class="site-footer clb__dark_section  foot-col-black box-shd">
+    
+    <div class="page-container " style="padding: 20">
       <div class="widgets vc_row" style="padding: 30px 40px">
         <div class="col-lg-6 text-lg-left text-center txt-ctrl">
           <div class="credits">
@@ -1400,14 +1405,16 @@
           </div>
         </div>
       </div>
-      <div class="theme-switch-wrapper" style="padding: 30px;">
+      <div class="theme-switch-wrapper " style="padding: 30px;">
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
           <div class="slider round"></div>
         </label>
       </div>
     </div>
+    
   </footer>
+
   <a class="clb-scroll-top vc_hidden-xs to-top visible light-typo" id="clb-scroll-top">
     <div class="clb-scroll-top-bar">
       <div class="scroll-track" style="width: 100%"></div>
